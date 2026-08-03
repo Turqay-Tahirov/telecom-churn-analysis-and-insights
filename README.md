@@ -26,14 +26,28 @@ Bu layihə telekommunikasiya sektorunda müştəri itkisinin (churn) qarşısın
 
 ---
 
-## 💡 Biznes Üçün Strateji Təkliflər
+## 📈 Korrelyasiya Analizi və Əsas Nəticələr
 
-1. **Uzunmüddətli Müqavilə Həvəsləndirmələri:** Yüksək ödəniş edən aylıq müştərilərə xüsusi endirimlərlə 1-2 illik müqavilələrə keçid təklif edilərək `tenure` göstəricisi artırılmalıdır.
-2. **Əlavə Xidmətlərin Paketləşdirilməsi:** Sadiqliyi 2 dəfədən çox artıran xidmətlər (`StreamingMovies`, `OnlineSecurity`) yuvarlaq tariflərə pulsuz və ya simvolik qiymətlə daxil edilməlidir.
-3. **Ailə və Çoxlu Xətt Paketləri:** Tək yaşayan müştərilərin riskini azaltmaq üçün onları ekosistemə bağlayan ailə/dost endirim paketləri tətbiq olunmalıdır.
-4. **Avtomatik Ödəniş Bonusları:** Elektron çekdən avtomatik bank ödənişinə (`Auto-payment`) keçən müştərilərə birdəfəlik keşbek və ya bonuslar verilməlidir.
+### 🔵 Güclü Müsbət Korrelyasiyalar
+1. **`tenure` və `TotalCharges` (0.83):** Datadakı ən güclü əlaqədir. Müştərinin şirkətdə qaldığı ay sayı (`tenure`) artdıqca, şirkətə ödədiyi ümumi məbləğ (`TotalCharges`) düz mütənasib şəkildə yüksəlir.
+2. **`MonthlyCharges` və `TotalCharges` (0.65):** Aylıq ödəniş məbləği yüksək olan müştərilərin təbii olaraq ümumi gəlirə verdiyi töhfə də daha böyük olur.
+3. **`MonthlyCharges` və `StreamingTV` / `StreamingMovies` (0.63):** Müştərilər paketlərinə TV və Kino əlavə etdikcə, onların aylıq ödəniş haqqı kəskin şəkildə artır.
+4. **`StreamingTV` və `StreamingMovies` (0.53):** Bu iki xidmət bir-biri ilə sıx bağlıdır. Platformada TV yayımlarını aktivləşdirən müştərilər çox böyük ehtimalla kino paketlərini də birlikdə alırlar.
 
 ---
+
+### 🔴 Əsas Mənfi Korrelyasiyalar
+1. **`tenure` və `Churn` (-0.35):** Datadakı ən güclü tərs mütənasib əlaqədir. Müştərinin şirkətdə qaldığı ay sayı (`tenure`) artdıqca, sistemdən çıxma/itki ehtimalı (`Churn`) azalır. Bu, **yeni müştərilərin şirkəti tərk etməyə ən çox meylli qrup olduğunu** riyazi olaraq sübut edir.
+2. **`Dependents` və `SeniorCitizen` (-0.21):** Yaşlı müştərilərin (`SeniorCitizen`) himayəsində yetkinlik yaşına çatmayan və ya baxıma möhtac şəxslərin (`Dependents`) olma ehtimalı daha aşağıdır.
+3. **`TotalCharges` və `Churn` (-0.20):** Şirkətə ümumi olaraq çox pul qazandırmış müştərilərin sistemdən çıxma riski daha azdır.
+
+---
+
+## 🎯 Strateji Biznes Təklifləri
+
+* 🚀 **Yeni Müştərilərə Xüsusi Dəstək:** `tenure` və `Churn` arasındakı əlaqə (-0.35) göstərir ki, şirkəti tərk edənlərin çoxu yeni müştərilərdir. İlk 3 ayda onlara xüsusi diqqət, onboarding dəstəyi və müvəqqəti endirimlər edilməlidir.
+* 📦 **Kino və TV-ni Paket Kimi Satmaq:** Bu iki xidmət bir-biri ilə sıx bağlı olduğu (0.53) və aylıq gəliri birbaşa artırdığı (0.63) üçün onları tək-tək yox, birləşdirilmiş vahid istirahət paketi kimi satmaq daha effektiv olacaqdır.
+* 👑 **Sadiq Müştərilərin Qorunması (VIP Proqramlar):** Müştərinin şirkətdə qaldığı müddət artdıqca qazandırdığı ümumi pul maksimuma çatır (0.83). Bu sadiq müştəriləri itirməmək üçün onlara xüsusi VIP təhlükəsizlik, prioritetsiz dəstək və bonuslar təqdim edilməlidir.
 
 ## 🧰 İstifadə Olunan Alətlər
 * **Dil:** Python
