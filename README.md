@@ -61,4 +61,4 @@ Bu layihə telekommunikasiya sektorunda müştəri itkisinin (churn) qarşısın
 
 * 🌐 **LinkedIn:** [linkedin.com/in/turqay-tahirov](https://linkedin.com/in/turqay-tahirov)
 * 🐙 **GitHub:** [github.com/turqaytahirov](https://github.com/turqaytahirov)
-* 📧 **Email:** [turqaytahirov@gmail.com](mailto:turqaytahirov@gmail.com)
+* 📧 **Email:** [turqaytahirov@gmail.com](mailto:tahirovturqay@gmail.com)
