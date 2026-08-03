@@ -51,5 +51,14 @@ Bu layihə telekommunikasiya sektorunda müştəri itkisinin (churn) qarşısın
 
 ## 🧰 İstifadə Olunan Alətlər
 * **Dil:** Python
-* **Kitabxanalar:** Pandas, NumPy, Matplotlib, Seaborn
+* **Kitabxanalar:** Pandas
 * **Mühit:** Jupyter Notebook
+
+  ## 👤 Author
+
+**Turqay Tahirov**  
+*Data Analyst*
+
+* 🌐 **LinkedIn:** [linkedin.com/in/turqay-tahirov](https://linkedin.com/in/turqay-tahirov)
+* 🐙 **GitHub:** [github.com/turqaytahirov](https://github.com/turqaytahirov)
+* 📧 **Email:** [turqaytahirov@gmail.com](mailto:turqaytahirov@gmail.com)
